@@ -40,7 +40,6 @@ h = sigmoid(X * theta);
 
 %J = sum((- 1 / m) * (log(h) .* y + log(1 - h) .* (1 -y)));
 J = (- 1 / m) * (y' * log(h) +  (1 -y)' * log(1 - h));
-%temp = theta[2:end];
 
 temp = theta;
 temp(1) = 0;
